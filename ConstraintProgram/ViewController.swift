@@ -60,8 +60,10 @@ class ViewController: UIViewController {
         print(b)
         let c = arr1.map({return $0 + 1})
         print(c)
-        let d = arr1.reduce(0, {sum,number in sum + number})
+        let d = arr1.reduce(0, {$0 + $1})
         print(d)
+        let e = arr1.sorted()
+        print("sorted program is \(e)")
         
         
         
